@@ -1,0 +1,30 @@
+#chart 
+	{
+  		font: @import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+		font-size: 10px;
+	}
+
+	.axis path, .axis line 
+	{
+  		fill: none;
+  		stroke: #000;
+	}
+	
+	.tick line
+	{
+    	opacity: 0.2;
+ 	}
+
+	/*.x.axis path 
+	{
+  		display: none;
+	}*/
+
+	.line 
+	{
+  		fill: none;
+  		stroke: steelblue;
+  		stroke-width: 1px;
+	}
+	
+	.axis text { display: none; }

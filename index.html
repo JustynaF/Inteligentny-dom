@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>SmartHome</title>
+		
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+		
+		<link href="css/main.css" rel="stylesheet">
+		<link href="css/metro.css" rel="stylesheet">
+		<link rel='stylesheet' href='CSS3Tooltips/css/tooltips.css'>
+		<link rel='stylesheet' href="css/chart.css">
+
+    	<script src="js/jquery.js"></script>
+    	<script src="js/metro.js"></script>
+		<script src="jquery-2.2.1.min.js"></script>
+		<script src="js/execPhpPython.js"> </script>
+		
+		<!--[if !IE | (gt IE 8)]><!-->
+		<script src="js/tooltips.js"></script>
+		<script>
+			$(function() 
+			{
+				$("#page-wrap a[title]").tooltips();
+			});
+		</script>
+		<!--<![endif]-->
+	</head>
+	<body>
+	<header id="head">
+		<a href="#"><img src="pics/logout.png" height="20" width="20"></a>
+	</header>
+	
+	<div id="featured-results">
+	</div>
+	
+
+	<div id="page-wrap">
+	
+		<div class="allTiles">
+		
+			<div class="title">
+				<h2> SmartHome </h1>
+			</div>
+			<div class="tile-small">
+    			<div class="tile-content slide-down">
+        			<div class="slide">
+                	 	<a href="#" title="Powiadomienia"><img src="pics/mail.png"></a>
+					</div>
+        			<div class="slide-over">
+           				<p> </p>
+        			</div>
+    			</div>
+			</div>
+		
+		
+			<div class="tile-small">
+    			<div class="tile-content slide-down">
+        			<div class="slide">
+	                 	<a href="index.html" title="Projekt"><img src="pics/info.png"></a>
+					</div>
+        			<div class="slide-over">
+           				<p> </p>
+        			</div>
+	    		</div>
+			</div>
+		
+		
+			<div class="tile">
+    			<div class="tile-content slide-left">
+        			<div class="slide">
+            			<a href="index.html" title="Podgląd kamery"><img src="pics/camera.ico"></a>
+        			</div>
+        			<div class="slide-over">
+            			<p> Podgląd z kamer </p>
+        			</div>
+    			</div>
+			</div>
+		
+			<div class="tile">
+    			<div class="tile-content slide-right">
+        			<div class="slide">
+            			<img src="pics/temp.png">
+        			</div>
+        			<div class="slide-over">
+            			<p> Temperatura: 24 </p>
+						<p> Wilgotność: 67% </p>
+        			</div>
+    			</div>
+			</div>
+		
+			<div class="tile-wide">
+    			<div class="tile-content slide-down">
+        			<div id="chart" class="slide">
+					</div>
+        			<div class="slide-over">
+           				<p> Kliknij, by zobaczyć pełen wykres temperatury i wilgotności w mieszkaniu. </p>
+	        		</div>
+    			</div>
+			</div>
+			
+			<form id="light" method="POST" action="index.html">
+				<div class="tile">
+    				<div class="tile-content slide-down">
+        				<div class="slide">
+                 			<img src="pics/lamp.png">
+						</div>
+						<div class="slide-over">
+						<div id="onoff">
+							<p> Włącz Światło </p>
+        				</div>	
+							<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" value="Yes">
+    						<label class="onoffswitch-label" for="myonoffswitch">
+        						<span class="onoffswitch-inner"></span>
+        						<!span class="onoffswitch-switch">
+    						</label>
+							</br>
+        				</div>
+    				</div>
+				</div>
+			</form>
+		</div>
+		
+		<footer id="foot">
+			<a href="index.html" title="Stopka"></p> To jest stopka </p></a>
+		</footer>
+		
+		<script src="http://d3js.org/d3.v3.js"></script>
+	<script src="js/chart.js"></script>
+	</div>	
+	</body>
+</html>
